@@ -1,0 +1,8 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Шахматный анализ</title>
+<script>
+  // Прямая ссылка внутрь приложения на устройстве, где оно ещё не открыто: уводим на ввод пароля
+  try { sessionStorage.setItem('sealed.next', location.pathname + location.search + location.hash) } catch (e) {}
+  location.replace('/chess/')
+</script>
